@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * inputs */
+.input-wrapper input {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 18em;
+    border-radius: 1rem;
+    /* color: #3276f2; */
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.input-wrapper select {
+    /* background-color: white; */
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 18em;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.option {
+    font-size: 1rem;
+    width: 18em;
+    border-radius: 1rem;
+    /* background-color: #3276f2; */
+}
+
+@media screen and (min-width: 768px) {
+    .input-wrapper input {
+        width:  24rem;
+    }
+
+    .input-wrapper select {
+        width:  24rem;
+    }
+}
+   
+.input-wrapper input:focus {
+    outline-color: #3276f2;
+}
+
+.input-wrapper select:focus {
+    outline-color: #3276f2;
+}
+
+/* * buttins */
+.button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+   
+   .button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   .button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   .button:hover svg {
+    transform: translateX(1.2em) rotate(90deg) scale(1.1);
+   }
+   
+   .button:hover span {
+    transform: translateX(5em);
+   }
+   
+   .button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+
+   .container_start_recording {
+    @apply w-full lg:w-3/5 p-2 rounded-lg drop-shadow-2xl bg-white text-center flex flex-col justify-center items-center space-y-5 lg:space-x-5;
+}
+
+   .container_cards {
+       @apply w-full lg:w-3/5 p-2 rounded-lg drop-shadow-2xl bg-white text-center flex flex-col lg:flex-row justify-between items-center space-y-5 lg:space-x-5;
+   }
+
+   .container_filtered {
+    @apply w-full lg:w-3/5 p-5 rounded-lg drop-shadow-2xl bg-white flex flex-col justify-center items-center lg:flex-row lg:space-x-5 lg:justify-evenly;
+   }
+
+   .container_cards_list {
+    @apply w-full  h-full lg:mt-2 p-2 rounded-lg drop-shadow-2xl bg-white text-center grid grid-cols-4 gap-3;
+}
+
+.container_swipe {
+    @apply w-full lg:w-3/5 h-full lg:mt-2 p-2 rounded-lg drop-shadow-2xl bg-white text-center
+}
+
+
+   .bg_dark_blur {
+       background-color: #212123;
+       /* background-color: rgba(255, 255, 255, 0.1); */
+       backdrop-filter: blur(8px);
+   }
+
+   .container_label_input {
+    @apply flex flex-col space-y-3 capitalize;
+   }

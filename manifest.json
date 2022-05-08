@@ -1,0 +1,24 @@
+{
+    "background_color": "#ffffff",
+    "categories": ["lifestyles", "education"],
+    "descripcion": "Prueba de PWA",
+    "dir": "ltr",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./src/resources/images/budget/drawable-hdpi/budget.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "id": "/",
+    "lang": "es-VE",
+    "name": "PWA LMF3z test",
+    "orientation": "portrait",
+    "prefer_related_applications": false,
+    "scope": "/",
+    "short_name": "PWA LMF3z",
+    "start_url": "/",
+    "theme_color": "#3276f"
+}
